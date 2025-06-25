@@ -12,11 +12,15 @@ interface Props {
 const { year, language } = Astro.props;
 
 function formatDate(date: string) {
-  return Intl.DateTimeFormat(language, {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  }).format(new Date(date));
+  if (date) {
+    return Intl.DateTimeFormat(language, {
+      month: "long",
+      day: "numeric",
+      year: "numeric",
+    }).format(new Date(date));
+  } else {
+    return "TBD";
+  }
 }
 
 const program = await getProgram(year, language);
