@@ -4,9 +4,9 @@ import FancyExternalLink from "../../FancyExternalLink.astro";
 import { useTranslation } from "../../../i18n/utils";
 
 interface Props {
-  from: string;
+  from?: string;
   title: string;
-  to: string;
+  to?: string;
   legend?: string;
   subtitle?: string;
   speaker?: string;
@@ -15,9 +15,9 @@ interface Props {
 }
 
 const {
-  from,
+  from = "",
   title,
-  to,
+  to = "",
   legend = "",
   subtitle = "",
   speaker = "",
@@ -38,7 +38,7 @@ function formatDuration(from: string, to: string) {
 <div class="cont">
   <div class="legendTimeCont">
     <div class:list={["legend", legend]}></div>
-    <span class="time">{formatTime(from)}</span>
+    <span class="time">{from ? formatTime(from) : "XX:xx"}</span>
   </div>
 
   <div class="detailsCont">
@@ -78,7 +78,13 @@ function formatDuration(from: string, to: string) {
       )
     }
   </div>
-  {to && <span class="duration">{formatDuration(from, to)}</span>}
+  {
+    to ? (
+      to && <span class="duration">{formatDuration(from, to)}</span>
+    ) : (
+      <span class="duration">{"x " + t("schedule.minutes")}</span>
+    )
+  }
 </div>
 
 <style>
