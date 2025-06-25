@@ -1,4 +1,4 @@
-export type BosKonfYear = "2023" | "2024";
+export type BosKonfYear = "2023" | "2024" | "2025";
 
 export type Program = {
   date: string;

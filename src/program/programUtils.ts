@@ -1,10 +1,14 @@
 import type { BosKonfYear, Program } from "./program";
 import program2023 from "./2023";
 import program2024 from "./2024";
+import program2025 from "./2025";
 
 export async function getProgram(year: BosKonfYear, language: "en" | "no") {
   let json: Program;
   switch (year) {
+    case "2025":
+      json = program2025;
+      break;
     case "2024":
       json = program2024;
       break;
