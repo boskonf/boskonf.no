@@ -49,7 +49,7 @@ const program2023: Program = {
         {
           name: "Presentasjon",
           name_en: "Presentation",
-          url: "/arkiv/2023/makt-programvare-idealistar.pdf",
+          url: "/old-boskonf-content/arkiv/2023/makt-programvare-idealistar.pdf",
         },
       ],
       videoUrl:
@@ -74,7 +74,7 @@ const program2023: Program = {
         {
           name: "Presentasjon",
           name_en: "Presentation",
-          url: "/arkiv/2023/osm.pdf",
+          url: "/old-boskonf-content/arkiv/2023/osm.pdf",
         },
       ],
       videoUrl:
@@ -99,7 +99,7 @@ const program2023: Program = {
         {
           name: "Presentasjon",
           name_en: "Presentation",
-          url: "/arkiv/2023/opensource_in_enterprise_environments.pdf",
+          url: "/old-boskonf-content/arkiv/2023/opensource_in_enterprise_environments.pdf",
         },
       ],
       videoUrl:
@@ -134,7 +134,7 @@ const program2023: Program = {
         {
           name: "Presentasjon",
           name_en: "Presentation",
-          url: "/arkiv/2023/kom-i-gang.pdf",
+          url: "/old-boskonf-content/arkiv/2023/kom-i-gang.pdf",
         },
       ],
       videoUrl:
