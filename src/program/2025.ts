@@ -1,7 +1,7 @@
 import type { Program } from "./program";
 
-const program2024: Program = {
-  date: "",
+const program2025: Program = {
+  date: "2025-10-30",
   location: "Kvarteret, Bergen",
   address: "Olav Kyrres gate 49, 5015 Bergen",
   locationUrl: "https://www.openstreetmap.org/node/6137059358",
@@ -157,4 +157,4 @@ const program2024: Program = {
   ],
 };
 
-export default program2024;
+export default program2025;
