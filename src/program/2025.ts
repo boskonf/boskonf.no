@@ -153,7 +153,16 @@ const program2025: Program = {
     },
   ],
   sponsors: [
-
+    {
+      "name": "Kantega",
+      "logo": "/sponsors/kantega.svg",
+      "url": "https://www.kantega.no/"
+    },
+    {
+      name: "TietoEvry",
+      logo: "/sponsors/tietoevry.svg",
+      url: "https://www.tietoevry.com/",
+    },
   ],
 };
 
