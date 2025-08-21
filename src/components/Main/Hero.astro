@@ -48,10 +48,12 @@ const program = await getProgram(year, language);
     {t("main.description")}
   </p>
 
-  <button disabled>
-    {t("main.signUp")}
-    <img src="/arrow-up-right.svg" alt="arrow up right icon" />
-  </button>
+  <a href="https://skjema.fribyte.no/index.php/455472?lang=nb" target="_blank">
+    <button>
+      {t("main.signUp")}
+      <img src="/arrow-up-right.svg" alt="arrow up right icon" />
+    </button>
+  </a>
 </div>
 
 <style>
@@ -129,11 +131,6 @@ const program = await getProgram(year, language);
   button:hover {
     background-color: #3ff1ce;
     border-color: rgba(255, 255, 255, 0.2);
-  }
-  button:disabled {
-    cursor: default;
-    background-color: #12e8be;
-    border-color: rgba(0, 0, 0, 0.1);
   }
 
   @media only screen and (min-width: 768px) {
