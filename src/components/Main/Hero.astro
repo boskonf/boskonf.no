@@ -2,6 +2,7 @@
 import { langs, useTranslation } from "../../i18n/utils";
 import type { BosKonfYear } from "../../program/program";
 import { getProgram } from "../../program/programUtils";
+import { config } from "../../config.ts";
 const t = useTranslation(Astro.url);
 
 interface Props {
@@ -24,6 +25,7 @@ function formatDate(date: string) {
 }
 
 const program = await getProgram(year, language);
+const isSignupEnabled = config.signupEnabled;
 ---
 
 <div class="content">
@@ -48,10 +50,24 @@ const program = await getProgram(year, language);
     {t("main.description")}
   </p>
 
-  <button disabled>
-    {t("main.signUp")}
-    <img src="/arrow-up-right.svg" alt="arrow up right icon" />
-  </button>
+  {
+    isSignupEnabled ? (
+      <a
+        href="https://skjema.fribyte.no/index.php/455472?lang=nb"
+        target="_blank"
+      >
+        <button>
+          {t("main.signUp")}
+          <img src="/arrow-up-right.svg" alt="arrow up right icon" />
+        </button>
+      </a>
+    ) : (
+      <button disabled>
+        {t("main.signUpFalse")}
+        <img src="/arrow-up-right.svg" alt="arrow up right icon" />
+      </button>
+    )
+  }
 </div>
 
 <style>
