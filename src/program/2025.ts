@@ -34,7 +34,7 @@ const program2025: Program = {
       speaker: {
         name: "Rolf Martin Glomsrud",
         description: "Utvikler, Frende",
-        description_en: "Software Engineer",
+        description_en: "Software Engineer, Frende",
         imageUrl: "speakers/Rolf-Glomsrud.jpg",
       },
       image: "TODO: path to some image in static dir",
