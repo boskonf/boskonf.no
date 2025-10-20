@@ -6,6 +6,7 @@ export const languages = {
 export const no = {
   "header.home": "Hjem",
   "header.archive": "Arkiv",
+  "header.about": "Om oss",
   "main.title": "En dag fylt med åpen kildekode i Bergen!",
   "main.subTitle": "Bergen Open Source Konferanse",
   "main.description":
@@ -24,6 +25,11 @@ export const no = {
   "sponsors.apply": "Kontakt oss for å bli sponsor",
   "speakers.title": "Våre talere",
   "faq.title": "Spørsmål?",
+  "about.title": "Om Bergen Open Source",
+  "about.description": "Bergen Open Source er en årlig teknologikonferanse i Bergen drevet av studenter og andre frivillige. Konferansen har fokus på fri åpen kildekode og åpne data.",
+  "codeofconduct.title": "Etiske retningslinjer",
+  "codeofconduct.description": "Alle deltakere på Bergen Open Source-konferansen, samt bidragsytere til vår offentlige programvare, forplikter seg til å følge våre etiske retningslinjer.",
+  "codeofconduct.link": "Etiske retningslinjer for Bergen Open Source",
   "archive.title": "Arkiv fra tidligere BOS-konferanser",
   "archive.description": "Lyst til å se på tidligere konferanser? Ta en titt på en av våres tidligere år under.",
   "footer.sourceLink": "Kildekode",
@@ -48,6 +54,7 @@ export const no = {
 export const en: typeof no = {
   "header.home": "Home",
   "header.archive": "Archive",
+  "header.about": "About",
   "main.title": "A day filled with open source in Bergen!",
   "main.subTitle": "Bergen Open Source Conference",
   "main.description":
@@ -66,6 +73,11 @@ export const en: typeof no = {
   "sponsors.apply": "Contact us to become a sponsor",
   "speakers.title": "Our speakers",
   "faq.title": "Questions?",
+  "about.title": "About Bergen Open Source",
+  "about.description": "Bergen Open Source is a yearly tech-conference in Bergen by students and other volunteers. The key focus is free open source and open data.",
+  "codeofconduct.title": "Code of Conduct",
+  "codeofconduct.description": "All participants of the Bergen Open Source Conference, as well as contributors to our public software, agree to abide by our Code of Conduct.",
+  "codeofconduct.link": "Code of conduct for Bergen Open Source",
   "archive.title": "Archive of previous BOS-conferences",
   "archive.description": "Want to take a look at past conferences? Take a look at one of our previous years below.",
   "footer.sourceLink": "Source code",

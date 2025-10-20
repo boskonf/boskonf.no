@@ -1,0 +1,29 @@
+---
+import { getLangFromUrl, useTranslation } from "../i18n/utils";
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslation(Astro.url);
+---
+
+<Layout>
+  <main>
+    <div class="markdown-text">
+      <slot />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    color: #fff;
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 1em;
+  }
+  .markdown-text {
+    max-width: var(--content-width);
+    margin-bottom: 3rem;
+  }
+</style>
