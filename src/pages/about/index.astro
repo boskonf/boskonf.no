@@ -1,0 +1,57 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { useTranslation } from "../../i18n/utils";
+const t = useTranslation(Astro.url);
+---
+
+<Layout title="About">
+  <div class="container">
+    <div class="content">
+      <h1>{t("about.title")}</h1>
+      <div class="txtCont">
+        <p>
+          {t("about.description")}
+        </p>
+        <h2>{t("codeofconduct.title")}</h2>
+        <p>{t("codeofconduct.description")}</p>
+        <a href="codeofconduct">{t("codeofconduct.link")}</a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .content {
+    color: #f1f1f1;
+    padding: 1rem 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .txtCont {
+    width: 100%;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    a {
+      width: max-content;
+      margin: 6rem 0 0 0;
+      color: #12e8be;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul li {
+      margin-left: 2rem;
+      list-style-type: disc;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .txtCont {
+      width: 100%;
+    }
+  }
+</style>
