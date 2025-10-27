@@ -1,3 +1,3 @@
 export const config = {
-  signupEnabled: true,
+  signupEnabled: false,
 };
