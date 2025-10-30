@@ -144,9 +144,9 @@ const program2025: Program = {
     {
       title: "Kvelden ferdig",
       title_en: "The evening is finished",
-      description: "Håper du hadde en fin kveld og likte årets konferanse :)",
+      description: "Håper du hadde en fin kveld og likte årets konferanse! Planen er etterfest på Muskedunder bar.",
       description_en:
-        "We hope you had a nice evening and liked this years iteration of the conference :)",
+        "We hope you had a nice evening and liked this years iteration of the conference! The plan is afterparty at Muskedunder bar.",
       image: "TODO: path to some image in static dir",
       from: "2025-10-30T20:35:00",
       to: "",
