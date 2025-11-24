@@ -53,7 +53,7 @@ const program2025: Program = {
         },
       ],
       videoUrl:
-        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/1_Rolf_Glomsrud.mov",
+        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/1_Rolf_Glomsrud.mp4",
     },
     {
       title: "Model Context Protocol (MCP)",
@@ -81,7 +81,7 @@ const program2025: Program = {
         },
       ],
       videoUrl:
-        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/2_Johannes_J%C3%B8sang.mov",
+        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/2_Johannes_J%C3%B8sang.mp4",
     },
     {
       title: "Mat",
@@ -119,7 +119,7 @@ const program2025: Program = {
         },
       ],
       videoUrl:
-        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/3_Alexander_Vassbotn_R%C3%B8yne-Helgesen.mov",
+        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/3_Alexander_Vassbotn_R%C3%B8yne-Helgesen.mp4",
     },
     {
       title: "Bruk av åpen programvare til trening av kunstig intelligens",
@@ -148,7 +148,7 @@ const program2025: Program = {
         },
       ],
       videoUrl:
-        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/4_Torger_Kielland.mov",
+        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/4_Torger_Kielland.mp4",
     },
     {
       title: "Personvernforordningen i praksis for Open Source",
@@ -178,7 +178,7 @@ const program2025: Program = {
         },
       ],
       videoUrl:
-        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/5_Fredrik_Christensen.mov",
+        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/5_Fredrik_Christensen.mp4",
     },
     {
       title:
@@ -208,7 +208,7 @@ const program2025: Program = {
         },
       ],
       videoUrl:
-        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/6_Peter_N_M_Hansteen.mov",
+        "https://files.fribyte.no/boskonf/2025/individuelle_speaks/6_Peter_N_M_Hansteen.mp4",
     },
     {
       title: "Takke for kvelden",
