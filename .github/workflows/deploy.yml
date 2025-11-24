@@ -2,9 +2,7 @@ name: Build & push Docker image (if main branch)
 
 on:
   push:
-    branches: ["*"]
-  pull_request:
-    branches: ["*"]
+    branches: ["main"]
 
 jobs:
   push_to_registry:
