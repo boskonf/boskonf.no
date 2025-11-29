@@ -21,13 +21,14 @@ const t = useTranslation(undefined, language);
     {
       speakers.map((speaker) => (
         <div class="cardCont">
-          {speaker.imageUrl && (
-            <img
-              class="pfp"
-              src={speaker.imageUrl}
-              alt={speaker.name + " picture"}
-            />
-          )}
+            <div class="overlay"></div>
+            {speaker.imageUrl && (
+              <img
+                class="pfp"
+                src={speaker.imageUrl}
+                alt={speaker.name + " picture"}
+              />
+            )}
           <span class="speakerInfo">
             <h3>{speaker.name}</h3>
             <p>{speaker.description}</p>
@@ -77,6 +78,15 @@ const t = useTranslation(undefined, language);
     height: 400px;
     background-color: #31313b;
     border-radius: 34px;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(transparent, black);
   }
   .speakersCont .cardCont img {
     width: 100%;
