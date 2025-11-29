@@ -12,7 +12,7 @@ export const no = {
   "main.description":
     "Bergen Open Source er en årlig teknologikonferanse i Bergen drevet av studenter og andre frivillige. Konferansen har fokus på fri åpen kildekode og åpne data.",
   "main.signUp": "Meld deg på",
-  "main.signUpFalse": "Påmelding kommer",
+  "main.signUpFalse": "Påmelding stengt",
   "about.about":
     "  har som mål om å skape en møteplass for studenter og næringsliv i Bergen. Vi ønsker å skape en konferanse som er tilgjengelig for alle, og som kan være en arena for å lære bort og inspirere til åpen kildekode og åpne data.",
   "about.learnmore": "Mer om friByte",
@@ -60,7 +60,7 @@ export const en: typeof no = {
   "main.description":
     "Bergen Open Source is a yearly tech-conference in Bergen by students and other volunteers. The key focus is free open source and open data.",
   "main.signUp": "Sign up",
-  "main.signUpFalse": "Registration opens soon",
+  "main.signUpFalse": "Registration closed",
   "about.about":
     " aims to create a meeting place for students and businesses in Bergen. We want to create a conference that is accessible to everyone and can serve as a platform for teaching and inspiring open source and open data.",
   "about.learnmore": "More about friByte",
