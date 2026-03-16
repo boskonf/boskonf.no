@@ -155,6 +155,13 @@ const program2023: Program = {
       from: "2023-11-02T19:45:00",
       to: "2023-11-02T20:05:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf23-experimenting-for-greener-code.pdf",
+        },
+      ],
       videoUrl:
         "https://files.fribyte.no/boskonf/2023/Kent_Inge_F_Simonsen_boskonf_2023.mp4",
     },
