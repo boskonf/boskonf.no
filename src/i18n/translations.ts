@@ -65,7 +65,7 @@ export const no = {
   "support.donate.bank.description":
     "Om du ønsker å unngå Vipps helt, kan du også støtte oss med en direkte bankoverføring via kontonummer:",
   "support.donate.bank.label": "Kontonummer:",
-  "support.donate.bank.number": "3450.67.89053",
+  "support.donate.bank.number": "3626.64.60311",
   "support.volunteer.title": "Bli frivillig",
   "support.volunteer.description":
     "Hjelp oss med å arrangere konferansen. Vi trenger alltid hjelp til planlegging, gjennomføring og oppfølging.",
@@ -143,7 +143,7 @@ export const en: typeof no = {
   "support.donate.bank.description":
     "If you want to avoid Vipps entirely, you can also support us with a direct bank transfer via account number:",
   "support.donate.bank.label": "Account number:",
-  "support.donate.bank.number": "3450.67.89053",
+  "support.donate.bank.number": "3626.64.60311",
   "support.volunteer.title": "Become a volunteer",
   "support.volunteer.description":
     "Help us organize the conference. We always need help with planning, execution, and follow-up.",
