@@ -8,16 +8,16 @@ description: "Terms and Conditions for donations to Bergen Open Source."
 
 ## Generelt om avtalen
 
-Bergen Open Source, org.nr 935344670, tilbyr faste donasjoner via Vipps. Avtalen gjelder månedlige trekk av et fast donasjonsbeløp som du selv velger (f.eks. 100 kr/mnd), med første trekk samme måned som oppsett. Beløpet og frekvensen (månedlig) bekreftes i Vipps-appen ved signering.
+Bergen Open Source, org.nr 935344670, tilbyr både faste donasjoner på månedlig frekvens og engangsdonasjoner via Vipps. 
+
+Når det gjelder månedlige trekk, kan du velge et fast donasjonsbeløp (f.eks. 100kr), med første trekk samme måned som oppsett. Beløpet og frekvensen (månedlig) bekreftes i Vipps-appen ved signering.
+
+Du kan selvfølgelig også unngå faste betalinger og donere et engangsbeløp når du selv måtte ønske!
 
 ## Oppsigelse og endring
 
-Du kan når som helst si opp eller endre avtalen gratis direkte i Vipps- eller MobilePay-appen uten bindingstid. Endringer trer i kraft fra neste trekk. Kontakt oss på post(at)boskonf.no ved spørsmål.
+Det er ingen bindingstid, så du kan når som helst si opp eller endre avtalen gratis direkte i Vipps- eller MobilePay-appen. Du kan kontakte oss på post(at)boskonf.no ved spørsmål.
 
 ## Personopplysninger
 
-Vi behandler nødvendige opplysninger som navn, telefonnummer og betalingsdetaljer kun for å administrere donasjonen, i samsvar med GDPR. Data deles ikke med tredjeparter utover Vipps. Du har rett til innsyn, retting eller sletting – kontakt post(at)boskonf.no
-
-## Klager og angrerett
-
-Du har 14 dagers angrerett fra første trekk; send melding til post(a)boskonf.no med navn og avtale-ID for refusjon. Klager håndteres innen 2 uker; eskalér til Forbrukertilsynet ved behov. Se Vipps' vilkår for ytterligere detaljer.
+Vi behandler nødvendige opplysninger som navn, telefonnummer og betalingsdetaljer kun for å administrere donasjonen, i samsvar med GDPR. Vi kommer ikke til å bruke dataen til noen andre formål enn å kunne verifisere hvem som har donert hva når eventuelle feil skjer i betalingskjeden eller ved kansellering av faste donasjoner. Data deles ikke med tredjeparter utover Vipps. Kontakt oss på post(at)boskonf.no om du har spørsmål. 
