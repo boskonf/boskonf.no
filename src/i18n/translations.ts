@@ -145,6 +145,7 @@ export const en: typeof no = {
     "If you want to avoid Vipps entirely, you can also support us with a direct bank transfer via account number:",
   "support.donate.bank.label": "Account number:",
   "support.donate.bank.number": "3626.64.60311",
+  "support.donate.bank.info": "Please write 'Donation' in the payment message so we can track donations :)",
   "support.volunteer.title": "Become a volunteer",
   "support.volunteer.description":
     "Help us organize the conference. We always need help with planning, execution, and follow-up.",
