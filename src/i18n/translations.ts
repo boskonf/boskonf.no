@@ -57,15 +57,16 @@ export const no = {
   "support.ways": "Måter å støtte oss på",
   "support.donate.title": "Donasjon",
   "support.donate.description":
-    "Støtt oss med enten en engangsdonasjon eller månedlige faste donasjoner. Alle bidrag går direkte til å gjøre både konferansen og driften av organisasjonen bedre.",
+    "Vi tar gjerne imot donasjoner, enten om det skulle være en engangsdonasjon eller månedlige faste donasjoner. Alle bidrag går direkte til å gjøre både konferansen og driften av organisasjonen bedre.",
   "support.donate.vipps.title": "Vipps",
   "support.donate.vipps.description":
-    "Du kan støtte oss med donasjoner via Vipps. Du velger selv beløpet og kan når som helst endre eller si opp avtalen.",
+    "Du kan støtte oss med donasjoner via Vipps. Du velger selv beløpet og kan når som helst endre eller si opp avtalen. Klikk på lenken under for å se avtalevilkårene for vipps donasjoner.",
   "support.donate.bank.title": "Kontonummer",
   "support.donate.bank.description":
     "Om du ønsker å unngå Vipps helt, kan du også støtte oss med en direkte bankoverføring via kontonummer:",
   "support.donate.bank.label": "Kontonummer:",
   "support.donate.bank.number": "3626.64.60311",
+  "support.donate.bank.info": "Gjerne skriv 'Donasjon' i meldingen for betalingen, så har vi kontroll på donasjoner :)",
   "support.volunteer.title": "Bli frivillig",
   "support.volunteer.description":
     "Hjelp oss med å arrangere konferansen. Vi trenger alltid hjelp til planlegging, gjennomføring og oppfølging.",
