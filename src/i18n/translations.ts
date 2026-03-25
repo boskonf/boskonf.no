@@ -60,7 +60,7 @@ export const no = {
     "Vi tar gjerne imot donasjoner, enten om det skulle være en engangsdonasjon eller månedlige faste donasjoner. Alle bidrag går direkte til å gjøre både konferansen og driften av organisasjonen bedre.",
   "support.donate.vipps.title": "Vipps",
   "support.donate.vipps.description":
-    "Du kan støtte oss med donasjoner via Vipps. Du velger selv beløpet og kan når som helst endre eller si opp avtalen. Klikk på lenken under for å se avtalevilkårene for vipps donasjoner.",
+    "Du kan støtte oss med donasjoner via Vipps på nummer 45686. Du velger selv beløpet og kan når som helst endre eller si opp avtalen. Klikk på lenken under for å se avtalevilkårene for vipps donasjoner.",
   "support.donate.bank.title": "Kontonummer",
   "support.donate.bank.description":
     "Om du ønsker å unngå Vipps helt, kan du også støtte oss med en direkte bankoverføring via kontonummer:",
@@ -139,7 +139,7 @@ export const en: typeof no = {
     "Support us with either a one-time donation or recurring monthly donations. All contributions go directly to making both the conference and the organization's operations better.",
   "support.donate.vipps.title": "Vipps",
   "support.donate.vipps.description":
-    "You can support us with donations via Vipps. You choose the amount yourself and can change or cancel the agreement at any time.",
+    "You can support us with donations via Vipps at number 45686. You choose the amount yourself and can change or cancel the agreement at any time.",
   "support.donate.bank.title": "Bank account",
   "support.donate.bank.description":
     "If you want to avoid Vipps entirely, you can also support us with a direct bank transfer via account number:",
