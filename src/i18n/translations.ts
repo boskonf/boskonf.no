@@ -34,7 +34,7 @@ export const no = {
   "archive.title": "Arkiv fra tidligere BOS-konferanser",
   "archive.description": "Lyst til å se på tidligere konferanser? Ta en titt på en av våres tidligere år under.",
   "footer.sourceLink": "Kildekode",
-  "footer.text": "BOSkonf, laget av friByte.",
+  "footer.text": "Organisasjonsnummer: 935 344 670",
   "sponsors.becomeTitle": "Bli sponsor",
   "sponsors.become":
     "Vi gir sponsorer muligheten til å nå en bred målgruppe som inkluderer studenter og etablerte utviklere innen bransjen. Vi ønsker selvsagt å gjøre konferansedagen enda mer minneverdig for dem! Dette kan inkludere alt i fra en kort presentasjon av selskapet til tilpassede logo-merkede sokker og godbiter. (Kanskje til og med noen overraskelser som gleder deltakerne🎫🍺?)",
@@ -112,7 +112,7 @@ export const en: typeof no = {
   "archive.title": "Archive of previous BOS-conferences",
   "archive.description": "Want to take a look at past conferences? Take a look at one of our previous years below.",
   "footer.sourceLink": "Source code",
-  "footer.text": "BOSkonf, created by friByte.",
+  "footer.text": "Organisation number: 935 344 670",
   "sponsors.becomeTitle": "Become a sponsor",
   "sponsors.become":
     "We give sponsors the opportunity to reach a broad audience that includes students and established developers in the industry. We want to make the conference day even more memorable to them! This can include everything from a brief presentation of the company to custom logo-marked socks and goodies. (Perhaps even some surprises that pleases the participants🎫🍺?)",
