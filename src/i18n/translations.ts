@@ -80,6 +80,43 @@ export const no = {
   "support.contact": "Kontakt oss på",
   "donation-terms.title": "Avtalevilkår for donasjoner",
   "donation-terms.link": "Les avtalevilkårene",
+  "header.cfp": "Send inn foredrag",
+  "cfp.title": "Send inn foredrag",
+  "cfp.intro":
+    "Har du et tema du brenner for? Del din kunnskap med fellesskapet! Vi ser etter foredragsholdere som vil dele innsikt om fri programvare, åpen kildekode og åpne data.",
+  "cfp.localSpeakers":
+    "Vi oppfordrer spesielt lokale foredragsholdere til å sende inn forslag – din erfaring fra Bergen og regionen er verdifull!",
+  "cfp.formats.title": "Foredragsformater",
+  "cfp.formats.lightning": "Lynforedrag (10 min)",
+  "cfp.formats.lightningDesc":
+    "Kort og konsist. Perfekt for å introdusere et konsept, vise frem et prosjekt eller dele en idé.",
+  "cfp.formats.talk": "Foredrag (20-30 min)",
+  "cfp.formats.talkDesc":
+    "Gå i dybden på et tema. Ideelt for tekniske presentasjoner, erfaringsdeling eller prosjektgjennomganger.",
+  "cfp.topics.title": "Temaer vi ser etter",
+  "cfp.topics.list": [
+    "Fri programvare og åpen kildekode",
+    "Åpne data og datavisualisering",
+    "Åpen kildekode-prosjekter du bidrar til eller har startet",
+    "Verktøy og teknologier for utviklere",
+    "Personvern og digital frihet",
+    "Studentprosjekter og læringserfaringer",
+    "Fellesskap og samarbeid i åpen kildekode",
+  ],
+  "cfp.process.title": "Prosess",
+  "cfp.process.submit": "Send inn ditt forslag på e-post til taler@boskonf.no",
+  "cfp.process.review": "Vi gjennomgår alle forslag fortløpende",
+  "cfp.process.notify": "Du får svar på e-post",
+  "cfp.dates.title": "Viktige datoer",
+  "cfp.dates.deadline": "Frist for innsending",
+  "cfp.dates.notify": "Svar til foredragsholdere",
+  "cfp.diversity.title": "Mangfold og inkludering",
+  "cfp.diversity.description":
+    "Bergen Open Source ønsker foredragsholdere fra alle bakgrunner velkommen. Enten du er en erfaren utvikler eller holder ditt første foredrag, vil vi gjerne høre fra deg.",
+  "cfp.submit": "Send inn forslag",
+  "cfp.submitEmail": "taler@boskonf.no",
+  "cfp.questions": "Har du spørsmål?",
+  "cfp.contact": "Ta kontakt på",
 };
 export const en: typeof no = {
   "header.home": "Home",
@@ -159,4 +196,41 @@ export const en: typeof no = {
   "support.contact": "Contact us at",
   "donation-terms.title": "Terms and Conditions for donations",
   "donation-terms.link": "Read the terms and conditions",
+  "header.cfp": "Submit a talk",
+  "cfp.title": "Call for Presentations",
+  "cfp.intro":
+    "Do you have a topic you're passionate about? Share your knowledge with the community! We're looking for speakers who want to share insights about free software, open source and open data.",
+  "cfp.localSpeakers":
+    "We especially encourage local speakers to submit proposals – your experience from Bergen and the region is valuable!",
+  "cfp.formats.title": "Presentation formats",
+  "cfp.formats.lightning": "Lightning talk (10 min)",
+  "cfp.formats.lightningDesc":
+    "Short and concise. Perfect for introducing a concept, showcasing a project, or sharing an idea.",
+  "cfp.formats.talk": "Talk (20-30 min)",
+  "cfp.formats.talkDesc":
+    "Go in-depth on a topic. Ideal for technical presentations, experience sharing, or project walkthroughs.",
+  "cfp.topics.title": "Topics we're looking for",
+  "cfp.topics.list": [
+    "Free software and open source",
+    "Open data and data visualization",
+    "Open source projects you contribute to or have started",
+    "Tools and technologies for developers",
+    "Privacy and digital freedom",
+    "Student projects and learning experiences",
+    "Community and collaboration in open source",
+  ],
+  "cfp.process.title": "Process",
+  "cfp.process.submit": "Send your proposal by email to taler@boskonf.no",
+  "cfp.process.review": "We review all proposals on a rolling basis",
+  "cfp.process.notify": "You will receive a response by email",
+  "cfp.dates.title": "Important dates",
+  "cfp.dates.deadline": "Submission deadline",
+  "cfp.dates.notify": "Speaker notification",
+  "cfp.diversity.title": "Diversity and inclusion",
+  "cfp.diversity.description":
+    "Bergen Open Source welcomes speakers from all backgrounds. Whether you're an experienced developer or giving your first talk, we'd love to hear from you.",
+  "cfp.submit": "Submit proposal",
+  "cfp.submitEmail": "taler@boskonf.no",
+  "cfp.questions": "Have questions?",
+  "cfp.contact": "Contact us at",
 };
