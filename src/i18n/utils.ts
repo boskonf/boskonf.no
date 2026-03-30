@@ -1,7 +1,7 @@
-import { en, no } from "./translations";
+import { en, nn, no } from "./translations";
 
-export const langs = { no, en };
-const defaultLang = "no";
+export const langs = { nn, no, en };
+const defaultLang = "nn";
 
 /**
  * Get the language from the URL.

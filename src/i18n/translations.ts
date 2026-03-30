@@ -1,5 +1,6 @@
 export const languages = {
-  no: "Norsk",
+  no: "Norsk (bokmål)",
+  nn: "Norsk (nynorsk)",
   en: "English",
 };
 
@@ -81,6 +82,86 @@ export const no = {
   "donation-terms.title": "Avtalevilkår for donasjoner",
   "donation-terms.link": "Les avtalevilkårene",
 };
+
+export const nn: typeof no = {
+  "header.home": "Heim",
+  "header.archive": "Arkiv",
+  "header.about": "Om oss",
+  "header.support": "Støtt oss",
+  "main.title": "Ein dag fylt med open kjeldekode i Bergen!",
+  "main.subTitle": "Bergen Open Source Konferanse",
+  "main.description":
+    "Bergen Open Source er ein årleg teknologikonferanse i Bergen driven av studentar og andre frivillige. Konferansen har fokus på fri open kjeldekode og opne data.",
+  "main.signUp": "Meld deg på",
+  "main.signUpFalse": "Påmelding stengt",
+  "about.about":
+    "  har som mål å skape ein møteplass for studentar og næringsliv i Bergen. Vi ønskjer å skape ein konferanse som er tilgjengeleg for alle, og som kan vere ein arena for å lære bort og inspirere til open kjeldekode og opne data.",
+  "about.learnmore": "Meir om friByte",
+  "schedule.title": "Program",
+  "schedule.practical": "Praktisk",
+  "schedule.talk": "Foredrag",
+  "schedule.break": "Pause",
+  "schedule.minutes": "minutt",
+  "sponsors.title": "Våre sponsorar",
+  "sponsors.apply": "Kontakt oss for å bli sponsor",
+  "speakers.title": "Våre talarar",
+  "faq.title": "Spørsmål?",
+  "about.title": "Om Bergen Open Source",
+  "about.description": "Bergen Open Source er ein årleg teknologikonferanse i Bergen driven av studentar og andre frivillige. Konferansen har fokus på fri open kjeldekode og opne data.",
+  "codeofconduct.title": "Etiske retningslinjer",
+  "codeofconduct.description": "Alle deltakarar på Bergen Open Source-konferansen, samt bidragsytarar til vår offentlege programvare, pliktar seg til å følgje våre etiske retningslinjer.",
+  "codeofconduct.link": "Etiske retningslinjer for Bergen Open Source",
+  "archive.title": "Arkiv frå tidlegare BOS-konferansar",
+  "archive.description": "Har du lyst til å sjå på tidlegare konferansar? Ta ein titt på eitt av våre tidlegare år under.",
+  "footer.sourceLink": "Kjeldekode",
+  "footer.text": "BOSkonf, laga av friByte.",
+  "sponsors.becomeTitle": "Bli sponsor",
+  "sponsors.become":
+    "Vi gjev sponsorar moglegheita til å nå ei brei målgruppe som inkluderer studentar og etablerte utviklarar i bransjen. Vi ønskjer sjølvsagt å gjere konferansedagen endå meir minneverdig for dei! Dette kan inkludere alt frå ein kort presentasjon av selskapet til tilpassa logo-merka sokkar og godbitar. (Kanskje til og med nokre overraskingar som gler deltakarane🎫🍺?)",
+  "sponsors.contact1": "Ønskjer du også å støtte konferansen som sponsor?",
+  "sponsors.contact2": "Ta kontakt på: ",
+  "sponsors.price":
+    "Som sponsor av Bergen Open Source er følgjande inkludert: ",
+  "sponsors.goods": [
+    "Vår takk via SoMe-innlegg",
+    "Logo på nettside",
+    "Roll-up-banner på konferanse (sponsor må stille med eigen)",
+    "Bruke BOSkonf-logo sjølv",
+    "Jobbutlysingar kan bli nemnde i introduksjon og avslutning av konferansen (høgst relevant for både studentar og deltakarar allereie i jobb)",
+  ],
+  "sponsors.highest":
+    "I tillegg vil høgaste spons få eit eige tidsrom for lynpresentasjon frå deira eige selskap (må vere relatert til Open Source).",
+  "support.title": "Støtt Bergen Open Source",
+  "support.description":
+    "Bergen Open Source er ein frivillig driven konferanse. For å kunne halde fram med å arrangere ein gratis konferanse for studentar og teknologientusiastar, er vi avhengige av støtte frå fellesskapet vårt.",
+  "support.ways": "Måtar å støtte oss på",
+  "support.donate.title": "Donasjon",
+  "support.donate.description":
+    "Vi tek gjerne imot donasjonar, anten det er ein eingongsdonasjon eller månadlege faste donasjonar. Alle bidrag går direkte til å gjere både konferansen og drifta av organisasjonen betre.",
+  "support.donate.vipps.title": "Vipps",
+  "support.donate.vipps.description":
+    "Du kan støtte oss med donasjonar via Vipps på nummer 45686. Du vel sjølv beløpet og kan når som helst endre eller seie opp avtalen. Klikk på lenkja under for å sjå avtalevilkåra for Vipps-donasjonar.",
+  "support.donate.bank.title": "Kontonummer",
+  "support.donate.bank.description":
+    "Om du ønskjer å unngå Vipps heilt, kan du også støtte oss med ei direkte bankoverføring via kontonummer:",
+  "support.donate.bank.label": "Kontonummer:",
+  "support.donate.bank.number": "3626.64.60311",
+  "support.donate.bank.info": "Gjerne skriv 'Donasjon' i meldinga for betalinga, så har vi kontroll på donasjonar :)",
+  "support.volunteer.title": "Bli frivillig",
+  "support.volunteer.description":
+    "Hjelp oss med å arrangere konferansen. Vi treng alltid hjelp til planlegging, gjennomføring og oppfølging.",
+  "support.sponsor.title": "Bli sponsor",
+  "support.sponsor.description":
+    "Er du ei bedrift som ønskjer å støtte open kjeldekode? Kontakt oss for å bli sponsor.",
+  "support.sponsor.link": "Les meir om sponsing",
+  "support.spread.title": "Spre ordet",
+  "support.spread.description":
+    "Del konferansen med vennene og kollegaene dine. Jo fleire som deltek, jo betre blir konferansen!",
+  "support.contact": "Kontakt oss på",
+  "donation-terms.title": "Avtalevilkår for donasjonar",
+  "donation-terms.link": "Les avtalevilkåra",
+};
+
 export const en: typeof no = {
   "header.home": "Home",
   "header.archive": "Archive",
