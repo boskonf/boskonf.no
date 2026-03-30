@@ -50,7 +50,7 @@ export const no = {
     "Jobbutlysninger kan bli nevnt i introduksjon og avslutning av konferansen (høyst relevant for både studenter og deltakere allerede i jobb)",
   ],
   "sponsors.highest":
-    "I tillegg vil høyeste spons få et eget tidsrom for lynpresentasjon fra deres eget selskap (må være relatert til Open Source).",
+    "I tillegg vil høyeste spons få et eget tidsrom for lynpresentasjon fra deres eget selskap (må være relatert til åpen kildekode).",
   "support.title": "Støtt Bergen Open Source",
   "support.description":
     "Bergen Open Source er en frivillig drevet konferanse. For å kunne fortsette å arrangere en gratis konferanse for studenter og teknologientusiaster, er vi avhengige av støtte fra vårt fellesskap.",
@@ -112,7 +112,7 @@ export const no = {
   "cfp.dates.notify": "Svar til foredragsholdere",
   "cfp.diversity.title": "Mangfold og inkludering",
   "cfp.diversity.description":
-    "Bergen Open Source ønsker foredragsholdere fra alle bakgrunner velkommen. Enten du er en erfaren utvikler eller holder ditt første foredrag, vil vi gjerne høre fra deg.",
+    "Bergen Open Source ønsker foredragsholdere fra alle bakgrunner, tro og kjønn velkommen. Enten du jobber som utvikler, akademiker, frivillig bidragsyter, eller vil holde ditt første foredrag, vil vi gjerne høre fra deg.",
   "cfp.submit": "Send inn forslag",
   "cfp.submitEmail": "taler@boskonf.no",
   "cfp.questions": "Har du spørsmål?",
@@ -228,7 +228,7 @@ export const en: typeof no = {
   "cfp.dates.notify": "Speaker notification",
   "cfp.diversity.title": "Diversity and inclusion",
   "cfp.diversity.description":
-    "Bergen Open Source welcomes speakers from all backgrounds. Whether you're an experienced developer or giving your first talk, we'd love to hear from you.",
+    "Bergen Open Source welcomes speakers from all backgrounds, creeds and genders. Whether you're an experienced developer, academic, volunteer contributor, or giving your first talk, we'd love to hear from you.",
   "cfp.submit": "Submit proposal",
   "cfp.submitEmail": "taler@boskonf.no",
   "cfp.questions": "Have questions?",
