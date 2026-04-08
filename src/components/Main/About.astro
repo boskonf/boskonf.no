@@ -1,6 +1,5 @@
 ---
 import { useTranslation } from "../../i18n/utils";
-import FancyExternalLink from "../FancyExternalLink.astro";
 const t = useTranslation(Astro.url);
 ---
 
@@ -14,10 +13,7 @@ const t = useTranslation(Astro.url);
         <span class="heroTxt">BOS konferansen</span>
         {t("about.about")}
       </p>
-      <FancyExternalLink
-        url="https://fribyte.no/om/"
-        text={t("about.learnmore")}
-      />
+<a href="/about" class="learn-more">{t("about.learnmore")}</a>
     </div>
   </div>
 </div>
@@ -50,9 +46,15 @@ const t = useTranslation(Astro.url);
       font-size: 1.75rem;
       font-weight: 300;
     }
-    a {
-      width: max-content;
-      margin: 6rem 0 0 0;
+    .learn-more {
+      display: inline-block;
+      margin: 2rem 0 0 0;
+      color: rgb(173, 241, 255);
+      font-size: 1.1em;
+      border-bottom: 2px solid rgb(173, 241, 255);
+    }
+    .learn-more:hover {
+      border-bottom: 4px solid rgb(173, 241, 255);
     }
   }
   .txtCont .heroTxt {
