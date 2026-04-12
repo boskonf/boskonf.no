@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { useTranslation } from "../../i18n/utils";
 const t = useTranslation(Astro.url);
 const topics = t<string[]>("cfp.topics.list");
+const requirements = t<string[]>("cfp.requirements.list");
 ---
 
 <Layout title={t("cfp.title")}>
@@ -34,6 +35,14 @@ const topics = t<string[]>("cfp.topics.list");
           </ul>
         </section>
 
+        <section class="requirements">
+          <h2>{t("cfp.requirements.title")}</h2>
+          <p>{t("cfp.requirements.intro")}</p>
+          <ul>
+            {requirements.map((req) => <li>{req}</li>)}
+          </ul>
+        </section>
+
         <section class="process">
           <h2>{t("cfp.process.title")}</h2>
           <ol>
@@ -41,6 +50,21 @@ const topics = t<string[]>("cfp.topics.list");
             <li>{t("cfp.process.review")}</li>
             <li>{t("cfp.process.notify")}</li>
           </ol>
+        </section>
+
+        <section class="dates">
+          <h2>{t("cfp.dates.title")}</h2>
+          <dl class="dates-list">
+            <div class="date-item">
+              <dt>{t("cfp.dates.deadline")}</dt>
+              <dd>{t("cfp.dates.deadlineDate")}</dd>
+            </div>
+            <div class="date-item">
+              <dt>{t("cfp.dates.notify")}</dt>
+              <dd>{t("cfp.dates.notifyDate")}</dd>
+            </div>
+          </dl>
+          <p class="response-info">{t("cfp.dates.responseInfo")}</p>
         </section>
 
         <section class="diversity">
@@ -159,6 +183,27 @@ const topics = t<string[]>("cfp.topics.list");
     color: #12e8be;
   }
 
+  .requirements ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .requirements li {
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .requirements li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #12e8be;
+  }
+
   .process ol {
     padding-left: 1.5rem;
   }
@@ -167,6 +212,42 @@ const topics = t<string[]>("cfp.topics.list");
     font-size: 1.1rem;
     margin-bottom: 0.75rem;
     padding-left: 0.5rem;
+  }
+
+  .dates-list {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .date-item {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+  }
+
+  .date-item dt {
+    font-size: 1rem;
+    opacity: 0.7;
+    flex-shrink: 0;
+    min-width: 12rem;
+  }
+
+  .date-item dd {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #12e8be;
+    margin: 0;
+  }
+
+  .response-info {
+    font-size: 1rem;
+    opacity: 0.85;
+    font-style: italic;
   }
 
   .diversity {
