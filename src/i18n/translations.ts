@@ -104,22 +104,31 @@ export const no = {
     "Fellesskap og samarbeid i åpen kildekode",
   ],
   "cfp.requirements.title": "Krav til innsending",
-  "cfp.requirements.intro": "Følgende må vedlegges når du sender inn foredragsforslaget ditt:",
-  "cfp.requirements.list": [
-    "Kort forklaring av hva foredraget handler om",
-    "PDF av alle lysbildene fra presentasjonen",
+  "cfp.requirements.intro":
+    "Det finnes to frister for innsending av foredragsforslag:",
+  "cfp.requirements.abstractDeadline": "Frist for sammendrag – 1. juli 2026",
+  "cfp.requirements.abstractDesc":
+    "Du kan sende inn et sammendrag av foredraget ditt innen 1. juli. Sammendraget bør være minst ett avsnitt (ca. 5–6 setninger) som forklarer hva presentasjonen handler om. Det er ikke påkrevd å sende inn innen denne fristen – du kan også velge å sende inn alt samlet innen den endelige fristen.",
+  "cfp.requirements.finalDeadline": "Endelig frist – 1. august 2026",
+  "cfp.requirements.finalDesc":
+    "Innen den endelige fristen må følgende vedlegges:",
+  "cfp.requirements.finalList": [
+    "Et sammendrag som forklarer hva foredraget handler om",
+    "En PDF-versjon av presentasjonen",
   ],
   "cfp.process.title": "Prosess",
   "cfp.process.submit": "Send inn ditt forslag på e-post til taler@boskonf.no",
   "cfp.process.review": "Vi gjennomgår alle forslag fortløpende",
   "cfp.process.notify": "Du får svar på e-post",
   "cfp.dates.title": "Viktige datoer",
-  "cfp.dates.deadline": "Frist for innsending",
+  "cfp.dates.abstractDeadline": "Frist for sammendrag (valgfri)",
+  "cfp.dates.abstractDeadlineDate": "1. juli 2026",
+  "cfp.dates.deadline": "Endelig frist for innsending",
   "cfp.dates.deadlineDate": "1. august 2026",
   "cfp.dates.notify": "Svar til foredragsholdere",
-  "cfp.dates.notifyDate": "Innen 2–4 ",
+  "cfp.dates.notifyDate": "Innen 2 uker etter fristen",
   "cfp.dates.responseInfo":
-    "Vi gjennomgår innsendte forslag fortløpende, og du kan forvente svar innen 2–4 uker etter innsendingsfristen 1. august.",
+    "Vi gjennomgår innsendte forslag fortløpende, og du kan forvente svar innen 2 uker etter innsendingsfristen 1. august.",
   "cfp.diversity.title": "Mangfold og inkludering",
   "cfp.diversity.description":
     "Bergen Open Source ønsker foredragsholdere fra alle bakgrunner, tro og kjønn velkommen. Enten du jobber som utvikler, akademiker, frivillig bidragsyter, eller vil holde ditt første foredrag, vil vi gjerne høre fra deg.",
@@ -230,22 +239,31 @@ export const en: typeof no = {
     "Community and collaboration in open source",
   ],
   "cfp.requirements.title": "Submission requirements",
-  "cfp.requirements.intro": "The following must be included when submitting your proposal:",
-  "cfp.requirements.list": [
-    "Short explanation of what the talk is about",
-    "PDF of all presentation slides",
+  "cfp.requirements.intro":
+    "There are two deadlines for submitting talk proposals:",
+  "cfp.requirements.abstractDeadline": "Abstract deadline – July 1st, 2026",
+  "cfp.requirements.abstractDesc":
+    "You can submit an abstract of your talk by July 1st. The abstract should be at least one paragraph (around 5–6 sentences) explaining what your presentation is about. Meeting this deadline is not required – you can also choose to submit everything together by the final deadline.",
+  "cfp.requirements.finalDeadline": "Final deadline – August 1st, 2026",
+  "cfp.requirements.finalDesc":
+    "By the final deadline, the following must be included:",
+  "cfp.requirements.finalList": [
+    "An abstract explaining what the presentation is about",
+    "A PDF version of the presentation",
   ],
   "cfp.process.title": "Process",
   "cfp.process.submit": "Send your proposal by email to taler@boskonf.no",
   "cfp.process.review": "We review all proposals on a rolling basis",
   "cfp.process.notify": "You will receive a response by email",
   "cfp.dates.title": "Important dates",
-  "cfp.dates.deadline": "Submission deadline",
+  "cfp.dates.abstractDeadline": "Abstract deadline (optional)",
+  "cfp.dates.abstractDeadlineDate": "July 1st, 2026",
+  "cfp.dates.deadline": "Final submission deadline",
   "cfp.dates.deadlineDate": "August 1st, 2026",
   "cfp.dates.notify": "Speaker notification",
-  "cfp.dates.notifyDate": "Within 2–4 weeks of the deadline",
+  "cfp.dates.notifyDate": "Within 2 weeks of the deadline",
   "cfp.dates.responseInfo":
-    "We review submitted proposals on a rolling basis, and you can expect a response within 2–4 weeks after the submission deadline of August 1st.",
+    "We review submitted proposals on a rolling basis, and you can expect a response within 2 weeks after the submission deadline of August 1st.",
   "cfp.diversity.title": "Diversity and inclusion",
   "cfp.diversity.description":
     "Bergen Open Source welcomes speakers from all backgrounds, creeds and genders. Whether you're an experienced developer, academic, volunteer contributor, or giving your first talk, we'd love to hear from you.",

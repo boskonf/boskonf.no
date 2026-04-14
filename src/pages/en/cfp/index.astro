@@ -3,7 +3,7 @@ import Layout from "../../../layouts/Layout.astro";
 import { useTranslation } from "../../../i18n/utils";
 const t = useTranslation(Astro.url);
 const topics = t<string[]>("cfp.topics.list");
-const requirements = t<string[]>("cfp.requirements.list");
+const finalRequirements = t<string[]>("cfp.requirements.finalList");
 ---
 
 <Layout title={t("cfp.title")}>
@@ -38,8 +38,14 @@ const requirements = t<string[]>("cfp.requirements.list");
         <section class="requirements">
           <h2>{t("cfp.requirements.title")}</h2>
           <p>{t("cfp.requirements.intro")}</p>
+
+          <h3>{t("cfp.requirements.abstractDeadline")}</h3>
+          <p>{t("cfp.requirements.abstractDesc")}</p>
+
+          <h3>{t("cfp.requirements.finalDeadline")}</h3>
+          <p>{t("cfp.requirements.finalDesc")}</p>
           <ul>
-            {requirements.map((req) => <li>{req}</li>)}
+            {finalRequirements.map((req) => <li>{req}</li>)}
           </ul>
         </section>
 
@@ -55,6 +61,10 @@ const requirements = t<string[]>("cfp.requirements.list");
         <section class="dates">
           <h2>{t("cfp.dates.title")}</h2>
           <dl class="dates-list">
+            <div class="date-item">
+              <dt>{t("cfp.dates.abstractDeadline")}</dt>
+              <dd>{t("cfp.dates.abstractDeadlineDate")}</dd>
+            </div>
             <div class="date-item">
               <dt>{t("cfp.dates.deadline")}</dt>
               <dd>{t("cfp.dates.deadlineDate")}</dd>
@@ -181,6 +191,13 @@ const requirements = t<string[]>("cfp.requirements.list");
     position: absolute;
     left: 0;
     color: #12e8be;
+  }
+
+  .requirements h3 {
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .requirements ul {
