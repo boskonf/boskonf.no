@@ -80,6 +80,14 @@ export const no = {
   "support.contact": "Kontakt oss på",
   "donation-terms.title": "Avtalevilkår for donasjoner",
   "donation-terms.link": "Les avtalevilkårene",
+  "board.title": "Styremedlemmer",
+  "board.name": "Navn",
+  "board.position": "Stilling",
+  "board.leader": "Leder",
+  "board.deputyleader": "Nestleder",
+  "board.financialmanager": "Økonomiansvarlig",
+  "board.sponsorshipmanager": "Sponsoransvarlig",
+  "board.pr": "PR Ansvarlig",
 };
 export const en: typeof no = {
   "header.home": "Home",
@@ -159,4 +167,12 @@ export const en: typeof no = {
   "support.contact": "Contact us at",
   "donation-terms.title": "Terms and Conditions for donations",
   "donation-terms.link": "Read the terms and conditions",
+  "board.title": "Board Members",
+  "board.name": "Name",
+  "board.position": "Role",
+  "board.leader": "Leader",
+  "board.deputyleader": "Deputy Leader",
+  "board.financialmanager": "Financial Manager",
+  "board.sponsorshipmanager": "Sponsorship Manager",
+  "board.pr": "Head of PR",
 };
