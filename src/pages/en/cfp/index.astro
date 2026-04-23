@@ -67,6 +67,24 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
             {abstractRequirements.map((req) => <li>{req}</li>)}
           </ul>
 
+        <section class="evaluation">
+          <h2>{t("cfp.evaluation.title")}</h2>
+          <p>{t("cfp.evaluation.intro")}</p>
+          <ul>
+            {evaluationCriteria.map((criterion) => <li>{criterion}</li>)}
+          </ul>
+          <p class="sub-heading">{t("cfp.evaluation.withPresentation")}</p>
+          <ul>
+            {presentationCriteria.map((criterion) => <li>{criterion}</li>)}
+          </ul>
+        </section>
+        <p class="learn-more">
+          {t("cfp.evaluation.learnMore")}
+          <a href="/en/about">{t("cfp.evaluation.coreValues")}</a>
+          {t("cfp.evaluation.and")}
+          <a href="/en/about/codeofconduct">{t("cfp.evaluation.codeOfConduct")}</a>.
+        </p>
+
           <h3>{t("cfp.requirements.notifyDeadline")}</h3>
           <p>{t("cfp.requirements.notifyDesc")}</p>
 
@@ -85,24 +103,6 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
             <li>{t("cfp.process.notify")}</li>
           </ol>
         </section>
-
-        <section class="evaluation">
-          <h2>{t("cfp.evaluation.title")}</h2>
-          <p>{t("cfp.evaluation.intro")}</p>
-          <ul>
-            {evaluationCriteria.map((criterion) => <li>{criterion}</li>)}
-          </ul>
-          <p class="sub-heading">{t("cfp.evaluation.withPresentation")}</p>
-          <ul>
-            {presentationCriteria.map((criterion) => <li>{criterion}</li>)}
-          </ul>
-        </section>
-        <p class="learn-more">
-          {t("cfp.evaluation.learnMore")}
-          <a href="/en/about">{t("cfp.evaluation.coreValues")}</a>
-          {t("cfp.evaluation.and")}
-          <a href="/en/about/codeofconduct">{t("cfp.evaluation.codeOfConduct")}</a>.
-        </p>
 
         <section class="diversity">
           <h2>{t("cfp.diversity.title")}</h2>
