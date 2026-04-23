@@ -3,7 +3,10 @@ import Layout from "../../../layouts/Layout.astro";
 import { useTranslation } from "../../../i18n/utils";
 const t = useTranslation(Astro.url);
 const topics = t<string[]>("cfp.topics.list");
+const abstractRequirements = t<string[]>("cfp.requirements.abstractList");
 const finalRequirements = t<string[]>("cfp.requirements.finalList");
+const evaluationCriteria = t<string[]>("cfp.evaluation.criteria");
+const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
 ---
 
 <Layout title={t("cfp.title")}>
@@ -35,12 +38,37 @@ const finalRequirements = t<string[]>("cfp.requirements.finalList");
           </ul>
         </section>
 
+        <section class="dates">
+          <h2>{t("cfp.dates.title")}</h2>
+          <dl class="dates-list">
+            <div class="date-item">
+              <dt>{t("cfp.dates.abstractDeadline")}</dt>
+              <dd>{t("cfp.dates.abstractDeadlineDate")}</dd>
+            </div>
+            <div class="date-item">
+              <dt>{t("cfp.dates.notify")}</dt>
+              <dd>{t("cfp.dates.notifyDate")}</dd>
+            </div>
+            <div class="date-item">
+              <dt>{t("cfp.dates.deadline")}</dt>
+              <dd>{t("cfp.dates.deadlineDate")}</dd>
+            </div>
+          </dl>
+          <p class="response-info">{t("cfp.dates.responseInfo")}</p>
+        </section>
+
         <section class="requirements">
           <h2>{t("cfp.requirements.title")}</h2>
           <p>{t("cfp.requirements.intro")}</p>
 
           <h3>{t("cfp.requirements.abstractDeadline")}</h3>
           <p>{t("cfp.requirements.abstractDesc")}</p>
+          <ul>
+            {abstractRequirements.map((req) => <li>{req}</li>)}
+          </ul>
+
+          <h3>{t("cfp.requirements.notifyDeadline")}</h3>
+          <p>{t("cfp.requirements.notifyDesc")}</p>
 
           <h3>{t("cfp.requirements.finalDeadline")}</h3>
           <p>{t("cfp.requirements.finalDesc")}</p>
@@ -58,24 +86,23 @@ const finalRequirements = t<string[]>("cfp.requirements.finalList");
           </ol>
         </section>
 
-        <section class="dates">
-          <h2>{t("cfp.dates.title")}</h2>
-          <dl class="dates-list">
-            <div class="date-item">
-              <dt>{t("cfp.dates.abstractDeadline")}</dt>
-              <dd>{t("cfp.dates.abstractDeadlineDate")}</dd>
-            </div>
-            <div class="date-item">
-              <dt>{t("cfp.dates.deadline")}</dt>
-              <dd>{t("cfp.dates.deadlineDate")}</dd>
-            </div>
-            <div class="date-item">
-              <dt>{t("cfp.dates.notify")}</dt>
-              <dd>{t("cfp.dates.notifyDate")}</dd>
-            </div>
-          </dl>
-          <p class="response-info">{t("cfp.dates.responseInfo")}</p>
+        <section class="evaluation">
+          <h2>{t("cfp.evaluation.title")}</h2>
+          <p>{t("cfp.evaluation.intro")}</p>
+          <ul>
+            {evaluationCriteria.map((criterion) => <li>{criterion}</li>)}
+          </ul>
+          <p class="sub-heading">{t("cfp.evaluation.withPresentation")}</p>
+          <ul>
+            {presentationCriteria.map((criterion) => <li>{criterion}</li>)}
+          </ul>
         </section>
+        <p class="learn-more">
+          {t("cfp.evaluation.learnMore")}
+          <a href="/en/about">{t("cfp.evaluation.coreValues")}</a>
+          {t("cfp.evaluation.and")}
+          <a href="/en/about/codeofconduct">{t("cfp.evaluation.codeOfConduct")}</a>.
+        </p>
 
         <section class="diversity">
           <h2>{t("cfp.diversity.title")}</h2>
@@ -194,31 +221,57 @@ const finalRequirements = t<string[]>("cfp.requirements.finalList");
   }
 
   .requirements h3 {
-    color: #f1f1f1;
+    color: #12e8be;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    background: rgba(18, 232, 190, 0.1);
+    border-left: 4px solid #12e8be;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+  }
+
+  .requirements > p {
     font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .requirements h3 + p {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    opacity: 0.95;
   }
 
   .requirements ul {
     list-style: none;
     padding: 0;
     display: grid;
-    gap: 0.75rem;
-    margin-top: 0.75rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .requirements li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     font-size: 1.1rem;
+    line-height: 1.6;
   }
 
   .requirements li::before {
-    content: "→";
+    content: "✓";
     position: absolute;
     left: 0;
     color: #12e8be;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
 
   .process ol {
@@ -265,6 +318,76 @@ const finalRequirements = t<string[]>("cfp.requirements.finalList");
     font-size: 1rem;
     opacity: 0.85;
     font-style: italic;
+  }
+
+  .evaluation {
+    background: rgba(18, 232, 190, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    border: 1px solid rgba(18, 232, 190, 0.2);
+  }
+
+  .evaluation h2 {
+    margin-top: 0;
+  }
+
+  .evaluation > p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .evaluation .sub-heading {
+    font-weight: 600;
+    font-size: 1.15rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #12e8be;
+  }
+
+  .evaluation ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    background: none;
+    border: none;
+    border-radius: 0;
+  }
+
+  .evaluation li {
+    position: relative;
+    padding-left: 2rem;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .evaluation li::before {
+    content: "•";
+    position: absolute;
+    left: 0.5rem;
+    color: #12e8be;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  .learn-more {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    font-style: italic;
+    opacity: 0.9;
+  }
+
+  .learn-more a {
+    color: #12e8be;
+    text-decoration: none;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .learn-more a:hover {
+    text-decoration: underline;
   }
 
   .diversity {
