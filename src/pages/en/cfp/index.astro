@@ -67,6 +67,16 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
             {abstractRequirements.map((req) => <li>{req}</li>)}
           </ul>
 
+          <h3>{t("cfp.requirements.notifyDeadline")}</h3>
+          <p>{t("cfp.requirements.notifyDesc")}</p>
+
+          <h3>{t("cfp.requirements.finalDeadline")}</h3>
+          <p>{t("cfp.requirements.finalDesc")}</p>
+          <ul>
+            {finalRequirements.map((req) => <li>{req}</li>)}
+          </ul>
+        </section>
+
         <section class="evaluation">
           <h2>{t("cfp.evaluation.title")}</h2>
           <p>{t("cfp.evaluation.intro")}</p>
@@ -85,15 +95,6 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
           <a href="/en/about/codeofconduct">{t("cfp.evaluation.codeOfConduct")}</a>.
         </p>
 
-          <h3>{t("cfp.requirements.notifyDeadline")}</h3>
-          <p>{t("cfp.requirements.notifyDesc")}</p>
-
-          <h3>{t("cfp.requirements.finalDeadline")}</h3>
-          <p>{t("cfp.requirements.finalDesc")}</p>
-          <ul>
-            {finalRequirements.map((req) => <li>{req}</li>)}
-          </ul>
-        </section>
 
         <section class="process">
           <h2>{t("cfp.process.title")}</h2>
