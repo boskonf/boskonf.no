@@ -17,7 +17,7 @@ const t = useTranslation(Astro.url);
       sponsors.map((sponsor) =>
         sponsor.logo ? (
           <a href={sponsor.url} target="_blank">
-            <img src={sponsor.logo} alt={sponsor.name + " logo"} />
+            <img src={sponsor.logo} alt={sponsor.name + " logo"} loading="lazy" />
           </a>
         ) : (
           <a href={sponsor.url} class="placeholder-card">
