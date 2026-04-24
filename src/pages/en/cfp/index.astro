@@ -157,10 +157,11 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
   }
 
   .highlight {
-    border-left: 4px solid #12e8be;
-    padding: 0.5rem 1rem;
+    padding: 1rem 0;
     margin: 2rem 0;
     font-style: italic;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   section {
@@ -186,11 +187,8 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
   }
 
   .format-card {
-    border-left: 3px solid rgba(18, 232, 190, 0.4);
-    padding-left: 1rem;
-
     h3 {
-      color: #f1f1f1;
+      color: #12e8be;
       font-size: 1.1rem;
       margin-bottom: 0.25rem;
     }
@@ -225,25 +223,16 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
   }
 
   .dates-list {
-    border-left: 2px solid rgba(18, 232, 190, 0.4);
-    padding-left: 1.5rem;
     margin: 1rem 0 1.5rem 0;
   }
 
   .date-item {
-    padding: 0.5rem 0;
-    position: relative;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   }
 
-  .date-item::before {
-    content: "";
-    position: absolute;
-    left: calc(-1.5rem - 5px);
-    top: 0.85rem;
-    width: 8px;
-    height: 8px;
-    background: #12e8be;
-    border-radius: 50%;
+  .date-item:last-child {
+    border-bottom: none;
   }
 
   .date-item dt {
@@ -268,8 +257,9 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
-    border-left: 3px solid #12e8be;
-    padding-left: 0.75rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 2px solid rgba(18, 232, 190, 0.3);
+    width: fit-content;
   }
 
   .requirements > p {
