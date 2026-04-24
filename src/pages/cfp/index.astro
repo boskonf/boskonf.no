@@ -144,6 +144,11 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
     a:hover {
       text-decoration: underline;
     }
+
+    ul li {
+      margin-left: 2rem;
+      list-style-type: disc;
+    }
   }
 
   .intro {
@@ -152,9 +157,8 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
   }
 
   .highlight {
-    background: rgba(18, 232, 190, 0.1);
     border-left: 4px solid #12e8be;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     margin: 2rem 0;
     font-style: italic;
   }
@@ -171,7 +175,7 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
 
   .format-cards {
     display: grid;
-    gap: 1.5rem;
+    gap: 1rem;
     grid-template-columns: 1fr;
   }
 
@@ -182,21 +186,19 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
   }
 
   .format-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 1.5rem;
+    border-left: 3px solid rgba(18, 232, 190, 0.4);
+    padding-left: 1rem;
 
     h3 {
       color: #f1f1f1;
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
     }
 
     p {
       font-size: 1rem;
       margin: 0;
-      opacity: 0.9;
+      opacity: 0.85;
     }
   }
 
@@ -204,12 +206,14 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
     list-style: none;
     padding: 0;
     display: grid;
-    gap: 0.75rem;
+    gap: 0.5rem;
   }
 
   .topics li {
     position: relative;
     padding-left: 1.5rem;
+    margin-left: 0;
+    list-style-type: none;
     font-size: 1.1rem;
   }
 
@@ -220,98 +224,37 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
     color: #12e8be;
   }
 
-  .requirements h3 {
-    color: #12e8be;
-    font-size: 1.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-    background: rgba(18, 232, 190, 0.1);
-    border-left: 4px solid #12e8be;
-    padding: 0.75rem 1rem;
-    border-radius: 4px;
-  }
-
-  .requirements > p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-  }
-
-  .requirements h3 + p {
-    font-weight: 500;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
-    opacity: 0.95;
-  }
-
-  .requirements ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    gap: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    background: rgba(255, 255, 255, 0.03);
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .requirements li {
-    position: relative;
-    padding-left: 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  .requirements li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: #12e8be;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-
-  .process ol {
-    padding-left: 1.5rem;
-  }
-
-  .process li {
-    font-size: 1.1rem;
-    margin-bottom: 0.75rem;
-    padding-left: 0.5rem;
-  }
-
   .dates-list {
-    display: grid;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+    border-left: 2px solid rgba(18, 232, 190, 0.4);
+    padding-left: 1.5rem;
+    margin: 1rem 0 1.5rem 0;
   }
 
   .date-item {
-    display: flex;
-    align-items: baseline;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+
+  .date-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1.5rem - 5px);
+    top: 0.85rem;
+    width: 8px;
+    height: 8px;
+    background: #12e8be;
+    border-radius: 50%;
   }
 
   .date-item dt {
-    font-size: 1rem;
+    font-size: 0.95rem;
     opacity: 0.7;
-    flex-shrink: 0;
-    min-width: 12rem;
   }
 
   .date-item dd {
     font-size: 1.1rem;
-    font-weight: 600;
-    color: #12e8be;
-    margin: 0;
+    font-weight: 500;
+    margin: 0.15rem 0 0 0;
   }
 
   .response-info {
@@ -320,11 +263,49 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
     font-style: italic;
   }
 
+  .requirements h3 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    border-left: 3px solid #12e8be;
+    padding-left: 0.75rem;
+  }
+
+  .requirements > p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .requirements h3 + p {
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
+    font-size: 1.1rem;
+  }
+
+  .requirements ul {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .requirements li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .process ol {
+    padding-left: 1.5rem;
+  }
+
+  .process li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
   .evaluation {
-    background: rgba(18, 232, 190, 0.05);
-    border-radius: 8px;
-    padding: 1.5rem;
-    border: 1px solid rgba(18, 232, 190, 0.2);
+    margin: 2rem 0;
   }
 
   .evaluation h2 {
@@ -333,47 +314,19 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
 
   .evaluation > p {
     font-size: 1.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
   .evaluation .sub-heading {
     font-weight: 600;
-    font-size: 1.15rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #12e8be;
-  }
-
-  .evaluation ul {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
-    background: none;
-    border: none;
-    border-radius: 0;
-  }
-
-  .evaluation li {
-    position: relative;
-    padding-left: 2rem;
-    font-size: 1.05rem;
-    line-height: 1.6;
-  }
-
-  .evaluation li::before {
-    content: "•";
-    position: absolute;
-    left: 0.5rem;
-    color: #12e8be;
-    font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
   }
 
   .learn-more {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
     font-size: 1.05rem;
     font-style: italic;
     opacity: 0.9;
@@ -388,12 +341,6 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
 
   .learn-more a:hover {
     text-decoration: underline;
-  }
-
-  .diversity {
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 8px;
-    padding: 1.5rem;
   }
 
   .contact {
