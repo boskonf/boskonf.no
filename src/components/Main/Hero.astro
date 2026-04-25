@@ -29,16 +29,26 @@ function formatDate(date: string) {
 
 const program = await getProgram(year, language);
 const isSignupEnabled = config.signupEnabled;
+const isCalendarEnabled = config.calendarEnabled;
 ---
 
 <div class="content">
   <div class="dateCont">
-    <a href="/ical.ics">
-      <div class="date">
-        <img src="/calendar.svg" alt="calendar icon" />
-        <span>{formatDate(program.date)}</span>
-      </div>
-    </a>
+    {
+      isCalendarEnabled ? (
+        <a href="/ical.ics">
+          <div class="date">
+            <img src="/calendar.svg" alt="calendar icon" />
+            <span>{formatDate(program.date)}</span>
+          </div>
+        </a>
+      ) : (
+        <div class="date">
+          <img src="/calendar.svg" alt="calendar icon" />
+          <span>{program.date || "TBA"}</span>
+        </div>
+      )
+    }
     <a href={program.locationUrl} target="_blank">
       <div class="location">
         <img src="/location.svg" alt="location icon" />
