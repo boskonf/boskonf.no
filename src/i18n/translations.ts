@@ -13,10 +13,10 @@ export const no = {
   "main.description":
     "Bergen Open Source er en årlig teknologikonferanse i Bergen drevet av studenter og andre frivillige. Konferansen har fokus på fri åpen kildekode og åpne data.",
   "main.signUp": "Meld deg på",
-  "main.signUpFalse": "Påmelding stengt",
+  "main.signUpFalse": "Påmelding kommer",
   "about.about":
     "  har som mål om å skape en møteplass for studenter og næringsliv i Bergen. Vi ønsker å skape en konferanse som er tilgjengelig for alle, og som kan være en arena for å lære bort og inspirere til åpen kildekode og åpne data.",
-  "about.learnmore": "Mer om friByte",
+  "about.learnmore": "Mer om Bergen Open Source",
   "schedule.title": "Program",
   "schedule.practical": "Praktisk",
   "schedule.talk": "Foredrag",
@@ -164,6 +164,14 @@ export const no = {
   "cfp.submitEmail": "taler@boskonf.no",
   "cfp.questions": "Har du spørsmål?",
   "cfp.contact": "Ta kontakt på",
+  "board.title": "Styremedlemmer",
+  "board.name": "Navn",
+  "board.position": "Stilling",
+  "board.leader": "Leder",
+  "board.deputyleader": "Nestleder",
+  "board.financialmanager": "Økonomiansvarlig",
+  "board.sponsorshipmanager": "Sponsoransvarlig",
+  "board.pr": "PR Ansvarlig",
 };
 export const en: typeof no = {
   "header.home": "Home",
@@ -175,10 +183,10 @@ export const en: typeof no = {
   "main.description":
     "Bergen Open Source is a yearly tech-conference in Bergen by students and other volunteers. The key focus is free open source and open data.",
   "main.signUp": "Sign up",
-  "main.signUpFalse": "Registration closed",
+  "main.signUpFalse": "Form not open",
   "about.about":
     " aims to create a meeting place for students and businesses in Bergen. We want to create a conference that is accessible to everyone and can serve as a platform for teaching and inspiring open source and open data.",
-  "about.learnmore": "More about friByte",
+  "about.learnmore": "More about Bergen Open Source",
   "schedule.title": "Schedule",
   "schedule.practical": "Practical",
   "schedule.talk": "Talk",
@@ -327,4 +335,12 @@ export const en: typeof no = {
   "cfp.submitEmail": "taler@boskonf.no",
   "cfp.questions": "Have questions?",
   "cfp.contact": "Contact us at",
+  "board.title": "Board Members",
+  "board.name": "Name",
+  "board.position": "Role",
+  "board.leader": "Leader",
+  "board.deputyleader": "Deputy Leader",
+  "board.financialmanager": "Financial Manager",
+  "board.sponsorshipmanager": "Sponsorship Manager",
+  "board.pr": "Head of PR",
 };

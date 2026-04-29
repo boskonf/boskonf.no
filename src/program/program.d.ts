@@ -1,8 +1,10 @@
-export type BosKonfYear = "2023" | "2024" | "2025";
+export type BosKonfYear = "2023" | "2024" | "2025" | "2026";
 
 export type Program = {
   date: string;
+  date_en?: string;
   location: string;
+  location_en?: string;
   address: string;
   locationUrl: string;
   /**
@@ -35,6 +37,7 @@ export type EventAttachment = {
 
 export type Sponsor = {
   name: string;
+  name_en?: string;
   logo: string;
   url: string;
   description?: string;
@@ -43,6 +46,7 @@ export type Sponsor = {
 
 export type Speaker = {
   name: string;
+  name_en?: string;
   description: string;
   description_en?: string;
   imageUrl?: string | undefined;
