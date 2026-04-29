@@ -15,7 +15,7 @@ const t = useTranslation(Astro.url);
       ><img src="/favicon.svg" style="width: 7rem;" alt="boskonf icon" /></a
     >
 
-    <ul>
+    <ul class="desktop-nav">
       <li class="mobile-hide">
         <a href={url("/")}>{t("header.home")}</a>
       </li>
@@ -29,11 +29,53 @@ const t = useTranslation(Astro.url);
         <a href={url("/support/")}>{t("header.support")}</a>
       </li>
       <li>
+        <a href={url("/cfp/")} class="cfp-link">{t("header.cfp")}</a>
+      </li>
+      <li>
         <LanguageSwitch />
       </li>
     </ul>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </nav>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href={url("/")}>{t("header.home")}</a></li>
+      <li><a href={url("/archive/")}>{t("header.archive")}</a></li>
+      <li><a href={url("/about/")}>{t("header.about")}</a></li>
+      <li><a href={url("/support/")}>{t("header.support")}</a></li>
+      <li><a href={url("/cfp/")} class="cfp-link">{t("header.cfp")}</a></li>
+      <li><LanguageSwitch /></li>
+    </ul>
+  </div>
 </header>
+
+<script>
+  const hamburger = document.getElementById("hamburger")!;
+  const mobileMenu = document.getElementById("mobile-menu")!;
+
+  hamburger.addEventListener("click", () => {
+    const isOpen = hamburger.getAttribute("aria-expanded") === "true";
+    hamburger.setAttribute("aria-expanded", String(!isOpen));
+    mobileMenu.setAttribute("aria-hidden", String(isOpen));
+    hamburger.classList.toggle("open", !isOpen);
+    mobileMenu.classList.toggle("open", !isOpen);
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      hamburger.setAttribute("aria-expanded", "false");
+      mobileMenu.setAttribute("aria-hidden", "true");
+      hamburger.classList.remove("open");
+      mobileMenu.classList.remove("open");
+    });
+  });
+</script>
 
 <style>
   .head {
@@ -88,6 +130,82 @@ const t = useTranslation(Astro.url);
     width: 0;
   }
 
+  /* Hamburger button */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #f1f1f1;
+      border-radius: 2px;
+      transition: transform 0.25s, opacity 0.25s;
+      transform-origin: center;
+    }
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+  }
+
+  /* Mobile dropdown menu */
+  .mobile-menu {
+    display: none;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding: 0.5rem 0 1rem 0;
+      font-size: 1.25rem;
+
+      li {
+        padding: 0.75rem 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+      }
+
+      li:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .mobile-menu.open {
+    max-height: 30rem;
+  }
+
+  @media only screen and (max-width: 599px) {
+    .desktop-nav {
+      display: none;
+    }
+    .hamburger {
+      display: flex;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     .head nav {
       h1 {
@@ -104,5 +222,10 @@ const t = useTranslation(Astro.url);
       visibility: visible;
       width: unset;
     }
+  }
+
+  .cfp-link {
+    color: #12e8be;
+    font-weight: 500;
   }
 </style>
