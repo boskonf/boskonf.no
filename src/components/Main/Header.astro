@@ -29,7 +29,7 @@ const t = useTranslation(Astro.url);
         <a href={url("/support/")}>{t("header.support")}</a>
       </li>
       <li>
-        <a href={url("/cfp/")} class="cfp-link">{t("header.cfp")}</a>
+        <a href={url("/cfp/")}>{t("header.cfp")}</a>
       </li>
       <li>
         <LanguageSwitch />
@@ -49,7 +49,7 @@ const t = useTranslation(Astro.url);
       <li><a href={url("/archive/")}>{t("header.archive")}</a></li>
       <li><a href={url("/about/")}>{t("header.about")}</a></li>
       <li><a href={url("/support/")}>{t("header.support")}</a></li>
-      <li><a href={url("/cfp/")} class="cfp-link">{t("header.cfp")}</a></li>
+      <li><a href={url("/cfp/")}>{t("header.cfp")}</a></li>
       <li><LanguageSwitch /></li>
     </ul>
   </div>
@@ -224,8 +224,4 @@ const t = useTranslation(Astro.url);
     }
   }
 
-  .cfp-link {
-    color: #12e8be;
-    font-weight: 500;
-  }
 </style>
