@@ -98,7 +98,7 @@ const presentationCriteria = t<string[]>("cfp.evaluation.presentationCriteria");
         <section class="process">
           <h2>{t("cfp.process.title")}</h2>
           <ol>
-            <li>{t("cfp.process.submit")}</li>
+            <li>{t("cfp.process.submit")} <a href={`mailto:${t("cfp.submitEmail")}`}>{t("cfp.submitEmail")}</a></li>
             <li>{t("cfp.process.review")}</li>
             <li>{t("cfp.process.notify")}</li>
           </ol>
