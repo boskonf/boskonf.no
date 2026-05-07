@@ -1,7 +1,18 @@
+import { getRelativeLocaleUrl } from "astro:i18n";
 import { en, no } from "./translations";
 
 export const langs = { no, en };
 const defaultLang = "no";
+
+/**
+ * Returns an internal URL for the current page language.
+ * @param currentUrl The current URL to get the language from
+ * @param path The path to the page, e.g. "/sponsors"
+ * @returns An internal URL for the current page language
+ */
+export function getLocalizedUrl(currentUrl: URL, path: string) {
+  return getRelativeLocaleUrl(getLangFromUrl(currentUrl), path);
+}
 
 /**
  * Get the language from the URL.
