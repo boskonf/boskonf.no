@@ -1,12 +1,13 @@
 ---
-import { getLangFromUrl, useTranslation } from "../../i18n/utils";
+import {
+  getLangFromUrl,
+  useTranslation,
+  getLocalizedUrl,
+} from "../../i18n/utils";
 import LanguageSwitch from "../LanguageSwitch.astro";
 
-import { getRelativeLocaleUrl } from "astro:i18n";
-function url(path: string) {
-  return getRelativeLocaleUrl(getLangFromUrl(Astro.url), path);
-}
 const t = useTranslation(Astro.url);
+const url = (path: string) => getLocalizedUrl(Astro.url, path);
 ---
 
 <header class="head">

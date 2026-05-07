@@ -1,5 +1,5 @@
 ---
-import { useTranslation } from "../../i18n/utils";
+import { useTranslation, getLocalizedUrl } from "../../i18n/utils";
 import type { Sponsor } from "../../program/program";
 
 interface Props {
@@ -8,6 +8,7 @@ interface Props {
 const { sponsors } = Astro.props;
 
 const t = useTranslation(Astro.url);
+const url = (path: string) => getLocalizedUrl(Astro.url, path);
 ---
 
 <div class="cont">
@@ -16,18 +17,22 @@ const t = useTranslation(Astro.url);
     {
       sponsors.map((sponsor) =>
         sponsor.logo ? (
-          <a href={sponsor.url} target="_blank">
-            <img src={sponsor.logo} alt={sponsor.name + " logo"} loading="lazy" />
+          <a href={url(sponsor.url)} target="_blank">
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name + " logo"}
+              loading="lazy"
+            />
           </a>
         ) : (
-          <a href={sponsor.url} class="placeholder-card">
+          <a href={url(sponsor.url)} class="placeholder-card">
             <span class="placeholder-text">{sponsor.name}</span>
           </a>
-        )
+        ),
       )
     }
   </div>
-  <a class="call-to-action" href="/sponsor">
+  <a class="call-to-action" href={url("/sponsor")}>
     {t("sponsors.apply")}
     <img src="/arrow-up-right.svg" alt="arrow up right" />
   </a>

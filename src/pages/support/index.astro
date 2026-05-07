@@ -1,7 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import { useTranslation } from "../../i18n/utils";
+import { useTranslation, getLocalizedUrl } from "../../i18n/utils";
 const t = useTranslation(Astro.url);
+const url = (path: string) => getLocalizedUrl(Astro.url, path);
 ---
 
 <Layout title="Support">
@@ -13,7 +14,7 @@ const t = useTranslation(Astro.url);
           {t("support.description")}
         </p>
         <h2>{t("support.ways")}</h2>
-        
+
         <h3>{t("support.donate.title")}</h3>
         <p>{t("support.donate.description")}</p>
         <ul>
@@ -25,7 +26,12 @@ const t = useTranslation(Astro.url);
           <li>
             <h4>{t("support.donate.bank.title")}</h4>
             <p>{t("support.donate.bank.description")}</p>
-            <p>{t("support.donate.bank.label")} <span class="account-number">{t("support.donate.bank.number")}</span></p>
+            <p>
+              {t("support.donate.bank.label")}
+              <span class="account-number"
+                >{t("support.donate.bank.number")}</span
+              >
+            </p>
             <p>{t("support.donate.bank.info")}</p>
           </li>
         </ul>
@@ -35,7 +41,7 @@ const t = useTranslation(Astro.url);
 
         <h3>{t("support.sponsor.title")}</h3>
         <p>{t("support.sponsor.description")}</p>
-        <a href="/sponsor">{t("support.sponsor.link")}</a>
+        <a href={url("/sponsor")}>{t("support.sponsor.link")}</a>
 
         <h3>{t("support.spread.title")}</h3>
         <p>{t("support.spread.description")}</p>

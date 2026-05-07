@@ -1,19 +1,24 @@
 ---
-import { useTranslation } from "../../i18n/utils";
+import { useTranslation, getLocalizedUrl } from "../../i18n/utils";
 const t = useTranslation(Astro.url);
+const url = (path: string) => getLocalizedUrl(Astro.url, path);
 ---
 
 <div class="content">
   <div class="imgTxtCont">
     <div class="imgCont">
-      <img src="/mathias_present.webp" alt="One of last years speakers" loading="lazy" />
+      <img
+        src="/mathias_present.webp"
+        alt="One of last years speakers"
+        loading="lazy"
+      />
     </div>
     <div class="txtCont">
       <p>
         <span class="heroTxt">BOS konferansen</span>
         {t("about.about")}
       </p>
-<a href="/about" class="learn-more">{t("about.learnmore")}</a>
+      <a href={url("/about")} class="learn-more">{t("about.learnmore")}</a>
     </div>
   </div>
 </div>
