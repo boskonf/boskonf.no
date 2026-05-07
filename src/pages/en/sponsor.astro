@@ -1,5 +1,80 @@
 ---
-import GenericSponsor from "../sponsor.astro";
+import Layout from "../../layouts/Layout.astro";
+import { useTranslation } from "../../i18n/utils";
+const t = useTranslation(Astro.url);
+const goods = t<string[]>("sponsors.goods");
 ---
 
-<GenericSponsor />
+<Layout title="Bergen Open Source-konferanse">
+  <div class="container">
+    <div class="content">
+      <div class="imgTxtCont">
+        <h1>{t("sponsors.becomeTitle")}</h1>
+        <div class="txtCont">
+          <p>
+            {t("sponsors.become")}
+            <p>
+              {t("sponsors.contact1")}
+              {t("sponsors.contact2")}<a
+                href="mailto:sponsor@boskonf.no"
+                class="heroTxt">sponsor@boskonf.no</a
+              >
+            </p>
+            <p>{t("sponsors.price")}</p>
+            <div>
+              {
+                goods.map((item) => (
+                  <ul>
+                    <li>{item}</li>
+                  </ul>
+                ))
+              }
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .content {
+    color: #f1f1f1;
+    padding: 1rem 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .txtCont {
+    width: 100%;
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    a {
+      width: max-content;
+      margin: 6rem 0 0 0;
+    }
+    ul li {
+      margin-left: 2rem;
+      list-style-type: disc;
+    }
+  }
+  .txtCont .heroTxt {
+    color: #12e8be;
+    font-weight: 500;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .imgTxtCont {
+      flex-direction: row;
+    }
+    .imgCont {
+      width: 50%;
+    }
+    .txtCont {
+      width: 100%;
+    }
+  }
+</style>
