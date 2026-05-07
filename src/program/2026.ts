@@ -150,17 +150,29 @@ const program2026: Program = {
   ],
   sponsors: [
     {
-      name: "Din logo her?",
-      name_en: "Your logo here?",
-      logo: "",
-      url: "/sponsor",
+      name: "knowit",
+      name_en: "knowit",
+      logo: "/sponsors/knowit.svg",
+      url: "https://www.knowit.no/",
+    },
+    {
+      name: "NDLA",
+      name_en: "NDLA",
+      logo: "/sponsors/ndla.png",
+      url: "https://ndla.no/",
+    },
+    {
+      name: "SodaCompagniet AS",
+      name_en: "SodaCompagniet AS",
+      logo: "/sponsors/olacola.png",
+      url: "https://sodaco.no/",
     },
     {
       name: "Din logo her?",
       name_en: "Your logo here?",
       logo: "",
       url: "/sponsor",
-    },
+    }
   ],
 };
 
