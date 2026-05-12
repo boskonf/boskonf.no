@@ -17,7 +17,7 @@ const url = (path: string) => getLocalizedUrl(Astro.url, path);
     {
       sponsors.map((sponsor) =>
         sponsor.logo ? (
-          <a href={url(sponsor.url)} target="_blank">
+          <a href={sponsor.url} target="_blank">
             <img
               src={sponsor.logo}
               alt={sponsor.name + " logo"}
