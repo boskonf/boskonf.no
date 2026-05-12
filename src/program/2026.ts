@@ -158,13 +158,13 @@ const program2026: Program = {
     {
       name: "NDLA",
       name_en: "NDLA",
-      logo: "/sponsors/ndla.png",
+      logo: "/sponsors/ndla.webp",
       url: "https://ndla.no/",
     },
     {
       name: "SodaCompagniet AS",
       name_en: "SodaCompagniet AS",
-      logo: "/sponsors/olacola.png",
+      logo: "/sponsors/olacola.webp",
       url: "https://sodaco.no/",
     },
     {
