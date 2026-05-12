@@ -16,8 +16,8 @@ Du kan selvfølgelig også unngå faste betalinger og donere et engangsbeløp n�
 
 ## Oppsigelse og endring
 
-Det er ingen bindingstid, så du kan når som helst si opp eller endre avtalen gratis direkte i Vipps- eller MobilePay-appen. Du kan kontakte oss på post(at)boskonf.no ved spørsmål.
+Det er ingen bindingstid, så du kan når som helst si opp eller endre avtalen gratis direkte i Vipps- eller MobilePay-appen. Du kan kontakte oss på <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#111;&#115;&#116;&#64;&#98;&#111;&#115;&#107;&#111;&#110;&#102;&#46;&#110;&#111;">post [at] boskonf [dot] no</a> ved spørsmål.
 
 ## Personopplysninger
 
-Vi behandler nødvendige opplysninger som navn, telefonnummer og betalingsdetaljer kun for å administrere donasjonen, i samsvar med GDPR. Vi kommer ikke til å bruke dataen til noen andre formål enn å kunne verifisere hvem som har donert hva når eventuelle feil skjer i betalingskjeden eller ved kansellering av faste donasjoner. Data deles ikke med tredjeparter utover Vipps. Kontakt oss på post(at)boskonf.no om du har spørsmål. 
+Vi behandler nødvendige opplysninger som navn, telefonnummer og betalingsdetaljer kun for å administrere donasjonen, i samsvar med GDPR. Vi kommer ikke til å bruke dataen til noen andre formål enn å kunne verifisere hvem som har donert hva når eventuelle feil skjer i betalingskjeden eller ved kansellering av faste donasjoner. Data deles ikke med tredjeparter utover Vipps. Kontakt oss på <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#111;&#115;&#116;&#64;&#98;&#111;&#115;&#107;&#111;&#110;&#102;&#46;&#110;&#111;">post [at] boskonf [dot] no</a> om du har spørsmål.
