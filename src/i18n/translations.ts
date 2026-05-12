@@ -161,7 +161,6 @@ export const no = {
   "cfp.diversity.description":
     "Bergen Open Source ønsker foredragsholdere fra alle bakgrunner, tro og kjønn velkommen. Enten du jobber som utvikler, akademiker, frivillig bidragsyter, eller vil holde ditt første foredrag, vil vi gjerne høre fra deg.",
   "cfp.submit": "Send inn forslag",
-  "cfp.submitEmail": "taler@boskonf.no",
   "cfp.questions": "Har du spørsmål?",
   "cfp.contact": "Ta kontakt på",
   "board.title": "Styremedlemmer",
@@ -332,7 +331,6 @@ export const en: typeof no = {
   "cfp.diversity.description":
     "Bergen Open Source welcomes speakers from all backgrounds, creeds and genders. Whether you're an experienced developer, an academic, a volunteer contributor, or giving your first talk, we'd love to hear from you.",
   "cfp.submit": "Submit proposal",
-  "cfp.submitEmail": "taler@boskonf.no",
   "cfp.questions": "Have questions?",
   "cfp.contact": "Contact us at",
   "board.title": "Board Members",

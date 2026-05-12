@@ -16,8 +16,8 @@ You can of course also avoid recurring payments and donate a one-time amount whe
 
 ## Cancellation and changes
 
-There is no binding period, so you can cancel or change the agreement at any time for free directly in the Vipps or MobilePay app. Contact us at post(at)boskonf.no if you have any questions.
+There is no binding period, so you can cancel or change the agreement at any time for free directly in the Vipps or MobilePay app. Contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#111;&#115;&#116;&#64;&#98;&#111;&#115;&#107;&#111;&#110;&#102;&#46;&#110;&#111;">post [at] boskonf [dot] no</a> if you have any questions.
 
 ## Personal data
 
-We process necessary information such as name, phone number, and payment details solely to administer the donation, in accordance with GDPR. We will not use the data for any other purpose than to verify who has donated what when errors occur in the payment chain or when cancelling recurring donations. Data is not shared with third parties beyond Vipps. Contact us at post(at)boskonf.no if you have questions.
+We process necessary information such as name, phone number, and payment details solely to administer the donation, in accordance with GDPR. We will not use the data for any other purpose than to verify who has donated what when errors occur in the payment chain or when cancelling recurring donations. Data is not shared with third parties beyond Vipps. Contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#112;&#111;&#115;&#116;&#64;&#98;&#111;&#115;&#107;&#111;&#110;&#102;&#46;&#110;&#111;">post [at] boskonf [dot] no</a> if you have questions.
