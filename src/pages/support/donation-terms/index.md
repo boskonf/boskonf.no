@@ -1,7 +1,7 @@
 ---
 layout: "../../../layouts/About.astro"
-title: "Terms and Conditions"
-description: "Terms and Conditions for donations to Bergen Open Source."
+title: "Avtalevilkår for donasjoner"
+description: "Avtalevilkår for donasjoner til Bergen Open Source."
 ---
 
 # Avtalevilkår for donasjoner
@@ -20,4 +20,4 @@ Det er ingen bindingstid, så du kan når som helst si opp eller endre avtalen g
 
 ## Personopplysninger
 
-Vi behandler nødvendige opplysninger som navn, telefonnummer og betalingsdetaljer kun for å administrere donasjonen, i samsvar med GDPR. Vi kommer ikke til å bruke dataen til noen andre formål enn å kunne verifisere hvem som har donert hva når eventuelle feil skjer i betalingskjeden eller ved kansellering av faste donasjoner. Data deles ikke med tredjeparter utover Vipps. Kontakt oss på post(at)boskonf.no om du har spørsmål. 
+Vi behandler nødvendige opplysninger som navn, telefonnummer og betalingsdetaljer kun for å administrere donasjonen, i samsvar med GDPR. Vi kommer ikke til å bruke dataen til noen andre formål enn å kunne verifisere hvem som har donert hva når eventuelle feil skjer i betalingskjeden eller ved kansellering av faste donasjoner. Data deles ikke med tredjeparter utover Vipps. Kontakt oss på post(at)boskonf.no om du har spørsmål.
