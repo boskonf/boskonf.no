@@ -4,12 +4,9 @@ import arrow from "../../public/arrow-up-right.svg?raw";
 interface Props {
   url: string;
   text: string;
-  light?: boolean;
 }
 
-const { url, text, light = true } = Astro.props;
-
-const color = light ? "rgb(173, 241, 255) " : "rgb(33, 82, 187)";
+const { url, text} = Astro.props;
 ---
 
 <a href={url} target="_blank">
@@ -17,7 +14,7 @@ const color = light ? "rgb(173, 241, 255) " : "rgb(33, 82, 187)";
   <Fragment set:html={arrow} />
 </a>
 
-<style define:vars={{ "link-color": color }}>
+<style define:vars={{ "link-color": "#12e8be" }}>
   a {
     display: flex;
     align-items: center;
