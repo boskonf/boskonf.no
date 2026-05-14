@@ -1,7 +1,7 @@
 ---
 layout: "../../../layouts/About.astro"
-title: "Terms and Conditions"
-description: "Terms and Conditions for donations to Bergen Open Source."
+title: "Avtalevilkår for donasjoner"
+description: "Avtalevilkår for donasjoner til Bergen Open Source."
 ---
 
 # Avtalevilkår for donasjoner

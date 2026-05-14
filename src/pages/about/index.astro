@@ -5,7 +5,7 @@ import { members } from "../../members";
 const t = useTranslation(Astro.url);
 ---
 
-<Layout title="About">
+<Layout title={t("about.title")}>
   <div class="container">
     <div class="content">
       <h1>{t("about.title")}</h1>
