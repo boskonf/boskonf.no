@@ -12,29 +12,17 @@ const url = (path: string) => getLocalizedUrl(Astro.url, path);
 
 <header class="head">
   <nav>
-    <a href={url("/")}
-      ><img src="/favicon.svg" style="width: 7rem;" alt="boskonf icon" /></a
+    <a href={url("/")} class="logo-link"
+      ><img src="/favicon.svg" alt="boskonf icon" /></a
     >
 
     <ul class="desktop-nav">
-      <li class="mobile-hide">
-        <a href={url("/")}>{t("header.home")}</a>
-      </li>
-      <li>
-        <a href={url("/archive/")}>{t("header.archive")}</a>
-      </li>
-      <li>
-        <a href={url("/about/")}>{t("header.about")}</a>
-      </li>
-      <li>
-        <a href={url("/support/")}>{t("header.support")}</a>
-      </li>
-      <li>
-        <a href={url("/cfp/")}>{t("header.cfp")}</a>
-      </li>
-      <li>
-        <LanguageSwitch />
-      </li>
+      <li><a href={url("/")}>{t("header.home")}</a></li>
+      <li><a href={url("/archive/")}>{t("header.archive")}</a></li>
+      <li><a href={url("/about/")}>{t("header.about")}</a></li>
+      <li><a href={url("/support/")}>{t("header.support")}</a></li>
+      <li><a href={url("/cfp/")}>{t("header.cfp")}</a></li>
+      <li class="lang-switch"><LanguageSwitch /></li>
     </ul>
 
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
@@ -85,53 +73,54 @@ const url = (path: string) => getLocalizedUrl(Astro.url, path);
     max-width: var(--content-width);
     margin: 0 auto;
   }
+
   .head nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 2rem;
-
-    h1 {
-      width: 50%;
-      color: #f1f1f1;
-      font-size: 2.5rem;
-      font-weight: 500;
-      line-height: 0;
-    }
-
-    ul {
-      display: flex;
-      flex: 1 0;
-      gap: 1rem;
-      font-size: 1.125rem;
-
-      li {
-        position: relative;
-        cursor: pointer;
-      }
-      li::after {
-        width: 0%;
-        height: 5px;
-        content: "";
-        display: block;
-        background-color: #f1f1f1;
-        position: absolute;
-        bottom: -1;
-        left: 12%;
-        transition-duration: 0.25s;
-      }
-      li:hover::after {
-        width: 75%;
-      }
-    }
   }
 
-  .mobile-hide {
-    visibility: hidden;
-    width: 0;
+  .logo-link img {
+    display: block;
+    width: 7rem;
   }
 
-  /* Hamburger button */
+  .head nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+    flex: 1;
+  }
+
+  .head nav ul li {
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .head nav ul li::after {
+    width: 0%;
+    height: 5px;
+    content: "";
+    display: block;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: -1;
+    left: 12%;
+    transition-duration: 0.25s;
+  }
+
+  .head nav ul li:hover::after {
+    width: 75%;
+  }
+
+  .head nav ul li.lang-switch a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
   .hamburger {
     display: none;
     flex-direction: column;
@@ -143,61 +132,68 @@ const url = (path: string) => getLocalizedUrl(Astro.url, path);
     cursor: pointer;
     padding: 0;
     margin-left: auto;
+  }
 
-    span {
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #f1f1f1;
-      border-radius: 2px;
-      transition: transform 0.25s, opacity 0.25s;
-      transform-origin: center;
-    }
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #f1f1f1;
+    border-radius: 2px;
+    transition: transform 0.25s, opacity 0.25s;
+    transform-origin: center;
   }
 
   .hamburger.open span:nth-child(1) {
     transform: translateY(11px) rotate(45deg);
   }
+
   .hamburger.open span:nth-child(2) {
     opacity: 0;
   }
+
   .hamburger.open span:nth-child(3) {
     transform: translateY(-11px) rotate(-45deg);
   }
 
-  /* Mobile dropdown menu */
   .mobile-menu {
     display: none;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.3s ease;
+  }
 
-    ul {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      padding: 0.5rem 0 1rem 0;
-      font-size: 1.25rem;
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0 1rem 0;
+    font-size: 1.25rem;
+  }
 
-      li {
-        padding: 0.75rem 0.5rem;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        cursor: pointer;
-      }
+  .mobile-menu ul li {
+    padding: 0.75rem 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
 
-      li:last-child {
-        border-bottom: none;
-      }
-    }
+  .mobile-menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu ul li a {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
   }
 
   .mobile-menu.open {
     max-height: 30rem;
   }
 
-  @media only screen and (max-width: 599px) {
+  @media (max-width: 895px) {
     .desktop-nav {
-      display: none;
+      display: none !important;
     }
     .hamburger {
       display: flex;
@@ -207,22 +203,15 @@ const url = (path: string) => getLocalizedUrl(Astro.url, path);
     }
   }
 
-  @media only screen and (min-width: 768px) {
-    .head nav {
-      h1 {
-        width: 20%;
-      }
-      ul {
-        gap: 3rem;
-      }
+  @media (min-width: 896px) {
+    .head nav ul {
+      gap: 1.5rem;
     }
   }
 
-  @media only screen and (min-width: 450px) {
-    .mobile-hide {
-      visibility: visible;
-      width: unset;
+  @media (min-width: 1100px) {
+    .head nav ul {
+      gap: 3rem;
     }
   }
-
 </style>
