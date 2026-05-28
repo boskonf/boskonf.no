@@ -150,22 +150,28 @@ const program2026: Program = {
   ],
   sponsors: [
     {
+      name: "Equinor",
+      name_en: "Equinor",
+      logo: "/sponsors/equinor.webp",
+      url: "https://www.equinor.com/no"
+    },
+    {
       name: "knowit",
       name_en: "knowit",
       logo: "/sponsors/knowit.svg",
-      url: "https://www.knowit.no/",
+      url: "https://www.knowit.no/"
     },
     {
       name: "NDLA",
       name_en: "NDLA",
       logo: "/sponsors/ndla.webp",
-      url: "https://ndla.no/",
+      url: "https://ndla.no/"
     },
     {
       name: "SodaCompagniet AS",
       name_en: "SodaCompagniet AS",
       logo: "/sponsors/olacola.webp",
-      url: "https://sodaco.no/",
+      url: "https://sodaco.no/"
     },
     {
       name: "Din logo her?",
