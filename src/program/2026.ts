@@ -150,6 +150,12 @@ const program2026: Program = {
   ],
   sponsors: [
     {
+      name: "Enabler",
+      name_en: "Enabler",
+      logo: "/sponsors/enabler.svg",
+      url: "https://enabler.no/"
+    },
+    {
       name: "Equinor",
       name_en: "Equinor",
       logo: "/sponsors/equinor.webp",
