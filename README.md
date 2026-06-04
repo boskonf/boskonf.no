@@ -1,5 +1,9 @@
 # Bergen Open Source Conference
 
+## ⚠️ Boskonf has moved to Codeberg!
+
+Visit the new repo at: https://codeberg.org/boskonf/boskonf.no
+
 ## 🛠️ Setup
 
 1. `npm install`
